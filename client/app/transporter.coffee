@@ -12,7 +12,7 @@ class Transporter
     
     unless @el
       @el = $ """
-        <iframe id="canvas-transport-frame" src="#{ frameHost }/#{ framePath }" style="display: none;"></iframe>
+        <iframe id="canvas-transport-frame" src="#{ frameHost }/#{ framePath }" style="width: 0px; height: 0px; visibility: hidden;"></iframe>
       """
       @el.appendTo document.body
       @el = @el[0]
