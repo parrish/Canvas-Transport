@@ -1,0 +1,14 @@
+{
+  "name": "CanvasTransport",
+  "description": "Canvas Transport",
+  "author": "Zooniverse <support@zooniverse.org>",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "haw serve",
+    "deploy": "haw build && publisssh build demo.zooniverse.org/canvas_transport_client && rm -rf build"
+  },
+  "dependencies": {
+    "haw": "~0.3.16",
+    "publisssh": "~0.2.3"
+  }
+}
